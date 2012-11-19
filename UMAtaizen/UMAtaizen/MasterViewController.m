@@ -13,6 +13,8 @@
 @interface MasterViewController () {
     NSMutableArray *_objects;
     NSMutableArray *_objects2;
+    
+    DetailViewController *detailView;
 }
 @end
 
@@ -40,6 +42,11 @@
                  @"熊",
                  nil];
    
+
+#pragma mark - TODO: 阿部が追加 (お気に入りデータをアプリ起動のたびに削除しています)
+    // お気に入りデータの削除
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"FAVORITE"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (void)didReceiveMemoryWarning
@@ -71,8 +78,10 @@
 //}
 
 
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
@@ -82,11 +91,14 @@
     }
     if (indexPath.section==0) {
         cell.textLabel.text = [_objects objectAtIndex:indexPath.row];
+        
         return cell;
     }else if (indexPath.section==1){
         cell.textLabel.text = [_objects2 objectAtIndex:indexPath.row];
         return cell;
     }
+    
+    
     return 0;
     }
 
@@ -138,13 +150,15 @@
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        [[NSUserDefaults standardUserDefaults] setInteger:indexPath.section forKey:@"SECTION"];
+        [[NSUserDefaults standardUserDefaults] setInteger:indexPath.row forKey:@"ROW"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
         if (indexPath.section == 0) {
             NSDate *object = _objects[indexPath.row];
             [[segue destinationViewController] setDetailItem:object];
         }else if(indexPath.section == 1){
             NSDate *object2 = _objects2[indexPath.row];
             [[segue destinationViewController] setDetailItem:object2];
-
         }
         
     }

@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface  FavoriteDetail: UIViewController
+{
+    UIImageView *seeView;
+    NSMutableArray *fImg;
+}
 
 @property (strong, nonatomic) id detailItem;
 

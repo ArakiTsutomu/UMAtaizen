@@ -22,6 +22,13 @@
 		4DAE6BEE1647A254009B1691 /* Favorite.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE6BED1647A254009B1691 /* Favorite.m */; };
 		4DAE6BF21647A292009B1691 /* FavoriteDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE6BF11647A292009B1691 /* FavoriteDetail.m */; };
 		4DAE6BF61647AB83009B1691 /* Alien.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DAE6BF51647AB83009B1691 /* Alien.png */; };
+		F85DB41F1651E7AF002C1782 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = F85DB41E1651E7AF002C1782 /* 2.png */; };
+		F85DB4211651E7B7002C1782 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = F85DB4201651E7B7002C1782 /* 1.png */; };
+		F85DB4231651E7E4002C1782 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = F85DB4221651E7E4002C1782 /* 3.png */; };
+		F85DB518165246EC002C1782 /* UMAname.plist in Resources */ = {isa = PBXBuildFile; fileRef = F85DB517165246EC002C1782 /* UMAname.plist */; };
+		F85DB51A16524EBD002C1782 /* UMAname_2.plist in Resources */ = {isa = PBXBuildFile; fileRef = F85DB51916524EBD002C1782 /* UMAname_2.plist */; };
+		F85DB52416534787002C1782 /* FavoriteSample.plist in Resources */ = {isa = PBXBuildFile; fileRef = F85DB52316534787002C1782 /* FavoriteSample.plist */; };
+		F8CF8E1F1659DE3B00C6AB3D /* img.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8CF8E1E1659DE3B00C6AB3D /* img.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +55,13 @@
 		4DAE6BF01647A292009B1691 /* FavoriteDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteDetail.h; sourceTree = "<group>"; };
 		4DAE6BF11647A292009B1691 /* FavoriteDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteDetail.m; sourceTree = "<group>"; };
 		4DAE6BF51647AB83009B1691 /* Alien.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Alien.png; path = ../Alien.png; sourceTree = "<group>"; };
+		F85DB41E1651E7AF002C1782 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		F85DB4201651E7B7002C1782 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		F85DB4221651E7E4002C1782 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		F85DB517165246EC002C1782 /* UMAname.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UMAname.plist; sourceTree = "<group>"; };
+		F85DB51916524EBD002C1782 /* UMAname_2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UMAname_2.plist; sourceTree = "<group>"; };
+		F85DB52316534787002C1782 /* FavoriteSample.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FavoriteSample.plist; sourceTree = "<group>"; };
+		F8CF8E1E1659DE3B00C6AB3D /* img.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = img.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +119,8 @@
 				4DAE6BED1647A254009B1691 /* Favorite.m */,
 				4DAE6BF01647A292009B1691 /* FavoriteDetail.h */,
 				4DAE6BF11647A292009B1691 /* FavoriteDetail.m */,
+				F85DB41D1651E6EB002C1782 /* image */,
+				F85DB515165246BA002C1782 /* plist */,
 				4DA74A931646D93B00E10FB6 /* Supporting Files */,
 			);
 			path = UMAtaizen;
@@ -123,6 +139,27 @@
 				4DA74AA21646D93B00E10FB6 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F85DB41D1651E6EB002C1782 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				F85DB4201651E7B7002C1782 /* 1.png */,
+				F85DB41E1651E7AF002C1782 /* 2.png */,
+				F85DB4221651E7E4002C1782 /* 3.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
+		F85DB515165246BA002C1782 /* plist */ = {
+			isa = PBXGroup;
+			children = (
+				F85DB517165246EC002C1782 /* UMAname.plist */,
+				F85DB51916524EBD002C1782 /* UMAname_2.plist */,
+				F85DB52316534787002C1782 /* FavoriteSample.plist */,
+				F8CF8E1E1659DE3B00C6AB3D /* img.plist */,
+			);
+			name = plist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +219,13 @@
 				4DA74AA31646D93B00E10FB6 /* Default-568h@2x.png in Resources */,
 				4DA74AA61646D93B00E10FB6 /* MainStoryboard.storyboard in Resources */,
 				4DAE6BF61647AB83009B1691 /* Alien.png in Resources */,
+				F85DB41F1651E7AF002C1782 /* 2.png in Resources */,
+				F85DB4211651E7B7002C1782 /* 1.png in Resources */,
+				F85DB4231651E7E4002C1782 /* 3.png in Resources */,
+				F85DB518165246EC002C1782 /* UMAname.plist in Resources */,
+				F85DB51A16524EBD002C1782 /* UMAname_2.plist in Resources */,
+				F85DB52416534787002C1782 /* FavoriteSample.plist in Resources */,
+				F8CF8E1F1659DE3B00C6AB3D /* img.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,12 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MasterViewController.h"
 
 @interface DetailViewController : UIViewController<UIGestureRecognizerDelegate>
-
+{
+    NSArray *keyArray;
+    UIImage *umaImg;
+    UIImageView *umaImgV;
+}
 @property (strong, nonatomic) id detailItem;
+@property (nonatomic) int section;
+@property (nonatomic) int row;
 
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
-- (IBAction)favoriteResponder:(id)sender;
 
+
+- (IBAction)favoriteResponder:(id)sender;
 @end
