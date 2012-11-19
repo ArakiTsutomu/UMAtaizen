@@ -8,8 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Favorite : UITableViewController{
-
-}
-
+@interface Favorite : UITableViewController
 @end

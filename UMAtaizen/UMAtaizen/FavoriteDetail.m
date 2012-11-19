@@ -21,6 +21,8 @@
     if (_detailItem != newDetailItem) {
         _detailItem = newDetailItem;
         
+        NSLog(@"%@", _detailItem);
+        
         // Update the view.
         [self configureView];
     }
@@ -38,8 +40,26 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    // 画像名のplistファイルを作成
+    
+    // そのplistファイルから画像名を取り出して配列に入れておく
+    
+    
     [self configureView];
+    
+//    fImg = [NSMutableArray @["@1.png","@2.png","@3.png"]];
+//    for (i=0; i<3[fImg count]; i++) {
+//        if (<#condition#>) {
+//            <#statements#>
+//        }
+//    };
+    
+//    seeView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:fImg]];
+    [self.view addSubview:seeView];
+    
+        
+    
 }
 
 - (void)didReceiveMemoryWarning

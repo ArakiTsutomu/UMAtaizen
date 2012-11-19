@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface MasterViewController : UITableViewController
+{
+    NSInteger getSection;
+    NSInteger getRow;
+}
 
 @end
